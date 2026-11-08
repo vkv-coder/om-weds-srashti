@@ -9,7 +9,7 @@
   --accent: #641C2F;
   --accent-light: #9C2C49;
   --bg: #FFF9F2;
-  --bg-card: #FFF6EA;
+  --bg-card: #F6DFA8;
   --text: #2B1A1E;
   --text-light: #5A4047;
   --text-muted: #8C7680;
@@ -146,14 +146,14 @@ body {
 .member-name { font-weight: 700; color: var(--text); }
 .room-badge { display: inline-block; background: #F3E9DC; color: var(--accent); font-weight: 700; font-size: 13px; padding: 3px 10px; border-radius: 20px; margin-top: 4px; }
 
-.itinerary-item { border-left: 4px solid var(--primary); padding: 10px 14px; margin-bottom: 12px; background: #FFFDF8; border-radius: 0 var(--radius) var(--radius) 0; }
+.itinerary-item { border-left: 4px solid var(--primary); padding: 10px 14px; margin-bottom: 12px; background: #FBEAC0; border-radius: 0 var(--radius) var(--radius) 0; }
 .itinerary-item .ev-name { font-weight: 700; color: var(--accent); font-size: 15px; }
 .itinerary-item .ev-meta { font-size: 13px; color: var(--text-light); margin-top: 4px; }
 .ev-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
 .ev-link-btn { font-size: 13px; font-weight: 600; color: var(--accent); background: #F3E9DC; border: 1px solid var(--border); border-radius: 999px; padding: 5px 12px; text-decoration: none; }
 .ev-link-btn:active { background: var(--primary-light); }
 
-.announcement-item { border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; margin-bottom: 10px; background: #FFFDF8; }
+.announcement-item { border: 1px solid var(--border); border-radius: var(--radius); padding: 12px; margin-bottom: 10px; background: #FBEAC0; }
 .announcement-item .an-title { font-weight: 700; color: var(--accent); }
 .announcement-item .an-time { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
 
