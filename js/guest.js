@@ -82,6 +82,8 @@ function renderNavTabs() {
 function renderDashboardPage(container) {
   container.innerHTML = `
     <div class="wedding-banner">
+      <img class="banner-bugle left" src="icons/bugle-left.png" alt="">
+      <img class="banner-bugle right" src="icons/bugle-right.png" alt="">
       <div class="banner-icons">💐🎉💐</div>
       <div class="banner-title">Om weds Srashti</div>
       <div class="banner-subtitle">Wedding Celebration</div>
