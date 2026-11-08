@@ -25,7 +25,7 @@
 
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
-  background: linear-gradient(160deg, #FADCE0 0%, #FCEEDD 35%, #FFF9F2 60%, #F3E0B8 100%) fixed;
+  background: linear-gradient(160deg, #641C2F 0%, #B5451B 35%, #E8871A 65%, #C09A5B 100%) fixed;
   color: var(--text);
   min-height: 100vh;
 }
@@ -39,9 +39,31 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #FADCE0 0%, #FCEEDD 55%, #F0D9A8 100%);
+  background: linear-gradient(135deg, #641C2F 0%, #B5451B 35%, #E8871A 70%, #C09A5B 100%);
   padding: 16px;
 }
+
+/* ========== FESTIVE FALLING PETALS ========== */
+.petals { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 999; }
+.petal { position: absolute; top: -10%; opacity: 0.9; animation: petal-fall linear infinite; }
+@keyframes petal-fall {
+  0% { transform: translateY(-10vh) translateX(0) rotate(0deg); }
+  100% { transform: translateY(110vh) translateX(var(--drift, 30px)) rotate(360deg); }
+}
+.petal:nth-child(1) { left: 2%; font-size: 20px; animation-duration: 11s; animation-delay: 0s; --drift: 25px; }
+.petal:nth-child(2) { left: 10%; font-size: 15px; animation-duration: 9s; animation-delay: 2s; --drift: -20px; }
+.petal:nth-child(3) { left: 20%; font-size: 22px; animation-duration: 13s; animation-delay: 4.5s; --drift: 15px; }
+.petal:nth-child(4) { left: 30%; font-size: 17px; animation-duration: 10s; animation-delay: 1s; --drift: -30px; }
+.petal:nth-child(5) { left: 40%; font-size: 24px; animation-duration: 14s; animation-delay: 6s; --drift: 20px; }
+.petal:nth-child(6) { left: 50%; font-size: 16px; animation-duration: 8.5s; animation-delay: 3s; --drift: -15px; }
+.petal:nth-child(7) { left: 58%; font-size: 21px; animation-duration: 12s; animation-delay: 0.5s; --drift: 35px; }
+.petal:nth-child(8) { left: 68%; font-size: 18px; animation-duration: 9.5s; animation-delay: 5s; --drift: -25px; }
+.petal:nth-child(9) { left: 76%; font-size: 23px; animation-duration: 15s; animation-delay: 2.5s; --drift: 10px; }
+.petal:nth-child(10) { left: 84%; font-size: 16px; animation-duration: 10.5s; animation-delay: 7s; --drift: -20px; }
+.petal:nth-child(11) { left: 92%; font-size: 20px; animation-duration: 11.5s; animation-delay: 1.5s; --drift: 30px; }
+.petal:nth-child(12) { left: 96%; font-size: 17px; animation-duration: 13.5s; animation-delay: 4s; --drift: -10px; }
+.petal:nth-child(13) { left: 45%; font-size: 19px; animation-duration: 16s; animation-delay: 8s; --drift: -35px; }
+.petal:nth-child(14) { left: 15%; font-size: 15px; animation-duration: 10s; animation-delay: 6.5s; --drift: 18px; }
 
 .login-box {
   background: white;
@@ -156,6 +178,14 @@ body {
 .powered-by { font-size: 11px; color: var(--text-muted); margin-top: 6px; }
 .anyapps-badge { color: var(--text); font-weight: 700; text-decoration: none; }
 .anyapps-badge .accent { color: var(--accent); }
+
+/* entry-screen footer sits on the dark festive gradient, not a card - needs light text */
+#entry-screen .app-footer { color: rgba(255,255,255,0.9); }
+#entry-screen .support-line { color: rgba(255,255,255,0.85); }
+#entry-screen .support-line a,
+#entry-screen .anyapps-badge { color: #fff; }
+#entry-screen .anyapps-badge .accent { color: #FFE8B3; }
+#entry-screen .powered-by { color: rgba(255,255,255,0.75); }
 
 @media (max-width: 420px) {
   .login-box { padding: 28px 20px; }
