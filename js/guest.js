@@ -82,11 +82,13 @@ function renderNavTabs() {
 function renderDashboardPage(container) {
   container.innerHTML = `
     <div class="wedding-banner">
-      <img class="banner-bugle left" src="icons/bugle-left.png" alt="">
-      <img class="banner-bugle right" src="icons/bugle-right.png" alt="">
-      <div class="banner-icons">💐🎉💐</div>
-      <div class="banner-title">Om weds Srashti</div>
-      <div class="banner-subtitle">Wedding Celebration</div>
+      <img class="banner-bugle" src="icons/bugle-left.png" alt="">
+      <div class="banner-text">
+        <div class="banner-icons">💐🎉💐</div>
+        <div class="banner-title">Om weds Srashti</div>
+        <div class="banner-subtitle">Wedding Celebration</div>
+      </div>
+      <img class="banner-bugle" src="icons/bugle-right.png" alt="">
     </div>
     <div class="card" id="contact-card"></div>
     <div class="card">
