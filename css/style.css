@@ -25,7 +25,9 @@
 
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
-  background: linear-gradient(160deg, #641C2F 0%, #B5451B 35%, #E8871A 65%, #C09A5B 100%) fixed;
+  background-color: #B5451B;
+  background-image: repeating-linear-gradient(160deg, #641C2F 0%, #B5451B 18%, #E8871A 36%, #D47A17 54%, #E8871A 72%, #B5451B 90%, #641C2F 100%);
+  background-size: 100% 640px;
   color: var(--text);
   min-height: 100vh;
 }
